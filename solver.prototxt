@@ -1,0 +1,9 @@
+net: "network.prototxt" 
+lr_policy: "step"
+test_iter: 51 
+test_state: { stage: 'test-on-test' }
+test_interval: 1000
+gamma: 0.1
+snapshot_prefix: "./snapshots/ED_" 
+random_seed: 123
+
