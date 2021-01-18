@@ -1,6 +1,6 @@
 This is a Caffe implementation of Excitation Dropout described in
 
-> [Andrea Zunino*,Sarah Adel Bargal*, Pietro Morerio, Jianming Zhang, Stan Sclaroff, Vittorio Murino. "Excitation Dropout: Encouraging Plasticity in Deep Neural Networks" arXiv:1805.09092, 2019.](https://arxiv.org/abs/1805.09092)
+> [Andrea Zunino*,Sarah Adel Bargal*, Pietro Morerio, Jianming Zhang, Stan Sclaroff, Vittorio Murino. "Excitation Dropout: Encouraging Plasticity in Deep Neural Networks" International Journal of Computer Vision (IJCV), 2021.](https://link.springer.com/article/10.1007/s11263-020-01422-y)
 
 __This software implementation is provided for academic research and non-commercial purposes only.  This implementation is provided without warranty.__
 
@@ -24,7 +24,7 @@ To run the training process, please follow the following steps:
 @article{zunino2018excitation,
   author={Zunino, Andrea and Adel Bargal, Sarah and Morerio, Pietro and Zhang, Jianming and Sclaroff, Stan and Murino, Vittorio},
   title={Excitation Dropout: Encouraging Plasticity in Deep Neural Networks},
-  journal={arXiv preprint arXiv:1805.09092},
-  year={2019}
+  journal={International Journal of Computer Vision (IJCV)},
+  year={2021}
 }
 ```
