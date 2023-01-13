@@ -46,7 +46,8 @@ for i in range(niter):
   caffe.set_mode_gpu()
   for ff in range(solver.net.blobs['ip1'].data.shape[0]):
     mask[ff,:]=1-np.random.binomial(1,(C*(N-1)*mask[ff,:])/((C*N-1)*mask[ff,:]+1-C)) # Mask generation
-    solver.net.blobs['ip1'].data[ff,:]=np.multiply(mask[ff,:],solver.net.blobs['ip1'].data[ff,:]) # Application of the mask
+    scale=mask[ff,:].mean() # Scale parameter, only used  during training
+    solver.net.blobs['ip1'].data[ff,:]=np.multiply(mask[ff,:],solver.net.blobs['ip1'].data[ff,:])/scale # Application of the mask
   solver.net.forward(start='ip2')
   solver.net.backward()
   
